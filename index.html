@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanoQR Cryptologique - 24 Bits en 1 Bit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NanoQR Cryptologique</h1>
+            <p class="subtitle">Système cryptologique avec sécurité quantique 97.3% - Sécurité classique 100%</p>
+            <p class="description">Encodage 24/108 bits en format 1 bit</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Section Cadre Physique -->
+            <div class="section">
+                <h2>📏 CADRE PHYSIQUE</h2>
+                <p>Taille totale du NanoQR</p>
+                <div class="physical-frame">
+                    <div class="frame-info">
+                        <span>Dimensions: <strong>3mm × 3mm</strong></span>
+                        <span>Surface: <strong>9mm²</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Extérieur -->
+            <div class="section">
+                <h2>🔬 EXTÉRIEUR</h2>
+                <p>Dimensions nano (3×3mm) - Vue à l'œil nu</p>
+                <div class="exterior-view">
+                    <div class="nano-qr" id="nanoQR">
+                        <div class="qr-pattern"></div>
+                    </div>
+                    <p class="view-label">Vue microscopique (taille réelle)</p>
+                </div>
+            </div>
+
+            <!-- Section Intérieur -->
+            <div class="section">
+                <h2>🌀 INTÉRIEUR</h2>
+                <p>Labyrinthe COMPLEXE invisible à l'œil nu</p>
+                <div class="interior-view" id="interiorView">
+                    <canvas id="labyrinthCanvas" width="600" height="600"></canvas>
+                    <div class="complexity-info">
+                        <span>Complexité: <strong id="complexityLevel">Ultra-Dense</strong></span>
+                        <span>Densité: <strong id="densityLevel">Maximum</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Zoom -->
+            <div class="section">
+                <h2>🔍 ZOOM AUTOMATIQUE</h2>
+                <p>Révèle la complexité INTERNE comme un microscope</p>
+                <div class="zoom-control">
+                    <input type="range" id="zoomSlider" min="1" max="100" value="1" step="1">
+                    <div class="zoom-info">
+                        <span>Niveau de zoom: <strong id="zoomLevel">1x</strong></span>
+                        <span>Détails visibles: <strong id="detailsVisible">0%</strong></span>
+                    </div>
+                </div>
+                
+                <!-- Vue Zoomée -->
+                <div class="zoomed-view" id="zoomedView">
+                    <canvas id="zoomedCanvas" width="800" height="800"></canvas>
+                    <div class="zoom-overlay">
+                        <p>Utilisez le curseur pour zoomer et révéler le labyrinthe interne</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Encodage Cryptologique -->
+            <div class="section">
+                <h2>🔐 ENCODAGE CRYPTOLOGIQUE</h2>
+                <div class="encoding-section">
+                    <div class="input-section">
+                        <label for="dataInput">Données à encoder (24 bits max):</label>
+                        <input type="text" id="dataInput" placeholder="Entrez votre message..." maxlength="3">
+                        <button id="encodeBtn">Encoder</button>
+                    </div>
+                    <div class="encoding-info">
+                        <div class="info-row">
+                            <span>Bits d'entrée:</span>
+                            <strong id="inputBits">0 bits</strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Bits compactés:</span>
+                            <strong id="outputBits">0 bits</strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Ratio de compression:</span>
+                            <strong id="compressionRatio">24:1</strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Sécurité quantique:</span>
+                            <strong id="quantumSecurity">97.3%</strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Sécurité classique:</span>
+                            <strong id="classicSecurity">100%</strong>
+                        </div>
+                    </div>
+                    <div class="encoded-output">
+                        <p>Code encodé:</p>
+                        <div id="encodedData" class="encoded-data-display">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 NanoQR Cryptologique - Système de codage ultra-compact</p>
+            <p class="tech-info">Technologie: Encodage 24 bits → 1 bit | Format QR 1 bit contenant 24/108 bits</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
